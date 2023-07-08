@@ -6,20 +6,16 @@ import '../styles/Footer.css'
 function Footer() {
     return (
       <div className='footer'>
-        <Container>
-          <Row className='socialMedia'>
-            <Col>
+       
+          
+            <div>
               <a href='#'><FaFacebook /></a>
               <a href='#'><FaTwitter /></a>
               <a href='#'><FaLinkedin /></a>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
+              </div>
+        
               <p>&copy;2023 kream.com</p>
-            </Col>
-          </Row>
-        </Container>
+         
       </div>
     );
   }

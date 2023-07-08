@@ -9,8 +9,9 @@ function Home() {
     <div className='home' >
      {/* style={{backgroundImage: 'url($(BannerImage))'}}  */}
      <div className='headerContainer'>
-        <h1>kream</h1>
-        <p style={{marginTop:2}}>A Royal Experience of Taste </p>
+        <p style={{marginTop:1}}><h1><b>Kream</b></h1></p>
+
+        <p style={{marginTop:1}}><i><h6> Royal Experience of Taste</h6></i></p>
         <Link to='/menu'>
         <button>ORDER NOW</button>
         </Link>

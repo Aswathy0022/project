@@ -7,21 +7,26 @@ import { LoginPage } from "./pages/Login";
 import SignupPage from "./pages/Signup";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-
+import About from './pages/About';
+import Menu from './pages/Menu';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <div>
-      <Container className="bg-container d-flex flex-column" fluid>
+    <div className="bg-container d-flex flex-column">
+      
        
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="menu" element={<Menu/>} />
             <Route path="/signup" element={<SignupPage />} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
         <Footer></Footer>
-      </Container>
+      
     </div>
   );
 }

@@ -1,25 +1,26 @@
 .navbar {
     width: 100%;
-    height: 100px;
-    background-color: #ba8a32;
+    height: 60px;
+    background-color:#d0ba91;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   
   .navbar .leftSide {
-    flex: 50%;
+   
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 150px;
+  margin-left:50px ;
   }
   
   .navbar .leftSide img {
-    width: 70px;
+    width: 40px;
   }
   
   .navbar .rightSide {
-    flex: 50%;
+   
     height: 100%;
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@
   }
   
   .navbar a {
-    color: white;
+    color: rgb(12, 12, 12);
     text-decoration: none;
     margin: 20px;
   }
@@ -35,7 +36,7 @@
   .navbar .rightSide button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: rgb(15, 13, 13);
     cursor: pointer;
   }
   

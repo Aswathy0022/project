@@ -1,13 +1,13 @@
 .home {
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 60px - 60px);
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 130%;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     background-image: url('../assets/BannerImage.png');
   }
