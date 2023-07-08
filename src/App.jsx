@@ -1,13 +1,24 @@
-import React from 'react'
-import { Route, Routes } from "react-router-dom"
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import { LoginPage } from "./pages/Login";
+import SignupPage from "./pages/Signup";
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
-import Login from './components/Login.jsx'
-export default function Router() {
+export default function App() {
   return (
     <div>
-      <Routes>
-      <Route path="/Login" element={<Login />} />
-      </Routes>
+      <Container className="bg-container" fluid>
+       
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+          </Routes>
+        
+      </Container>
     </div>
-  )
+  );
 }
