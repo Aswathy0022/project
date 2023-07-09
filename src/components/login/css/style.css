@@ -1,10 +1,10 @@
 .bg-user-input {
-    background-color: #ae9b79 !important;
-    border: 1px #000 solid !important;
-    outline: none !important;
-    height: 40px;
-  }
-  .bg-user-input:focus {
-    outline: none !important;
-  }
-  
+  background-color: #00000000 !important;
+  border: 1px #ffffff solid !important;
+  outline: none !important;
+  height: 40px;
+  color: #fff !important
+}
+.bg-user-input:focus {
+  outline: none !important;
+}

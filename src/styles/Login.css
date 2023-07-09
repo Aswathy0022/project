@@ -1,0 +1,53 @@
+.lg-container {
+  display: flex;
+  height: calc(100vh - 50px - 40px);
+  padding: 0px 10px;
+  background-image: url("../assets/pexels-chevanon-photography-302898.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+.bg-login {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.571);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+::-ms-reveal {
+  filter: invert(100%);
+}
+
+.bg-login input[type="checkbox"] {
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+.bg-login button {
+  background-color: rgba(0, 0, 0, 0.765);
+  border: 0px;
+}
+
+.bg-login a {
+  color: rgba(255, 255, 255, 0.765);
+}
+
+.skip-lag {
+  width: 200px;
+  height: 60px;
+  font-size: 15pt;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: "bolder";
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.674);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+  border: 1px solid rgba(255, 255, 255, 0.571);
+}

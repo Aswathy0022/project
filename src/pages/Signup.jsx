@@ -1,30 +1,32 @@
 import React from "react";
 import { Form, Button, Card } from "react-bootstrap";
-import Signupdesign from "./Signupdesign"
+import Signupdesign from "./Signupdesign";
 export default function SignupPage() {
   return (
-    <div className="bg-signup">
+    <div className="lg-container">
       <Signupdesign></Signupdesign>
-      <Card className="p-3 m-4 " style={{flex:0.3}}>
-        <h3>SignUp</h3>
-        <p className="text">Just some details to get you in! </p>
+      <div className="p-2 m-2 bg-login" style={{ width: "20%", height: "90%" }}>
         <Form>
           <UserText
+            title={"Username"}
             formId="formBasicEmail"
             type="UserName"
             placeholder="UserName"
           />
           <UserText
+            title={"Email/Phone"}
             formId="formBasicEmail"
             type="Email/Phone"
             placeholder="Email/Phone"
           />
           <UserText
+            title={"Password"}
             formId="formBasicPassword"
             type="password"
             placeholder="Password"
           />
           <UserText
+            title={"Confirm Password"}
             formId="formBasicPassword"
             type="password"
             placeholder="Confirm Password"
@@ -40,9 +42,9 @@ export default function SignupPage() {
             </Button>
           </div>
         </Form>
-      </Card>
+      </div>
     </div>
-  )
+  );
 }
 
 function UserText({
@@ -53,7 +55,7 @@ function UserText({
   hintText = "",
 }) {
   return (
-    <Form.Group controlId={formId} className={"my-2"}>
+    <Form.Group controlId={formId} className={"my-1"}>
       <Form.Label>{title}</Form.Label>
       <Form.Control
         className="bg-user-input"

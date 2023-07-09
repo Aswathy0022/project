@@ -3,7 +3,6 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
   background-size: cover;
   background-image: url('../src/assets/BannerImage.png'); 
 }

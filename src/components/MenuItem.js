@@ -3,10 +3,11 @@ import React from "react";
 function MenuItem({ image, name, price }) {
   return (
     <div className="menuItem">
-      <div style={{ backgroundImage: `url(${image})` }}> </div>
-      <h1> {name} </h1>
-      <p> ${price} </p>
-      
+      <img src={image} alt={image} />
+      <div className="menu-item-title">
+        <p> {name} </p>
+        <p> ${price} </p>
+      </div>
     </div>
   );
 }

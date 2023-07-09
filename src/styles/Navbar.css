@@ -1,103 +1,42 @@
 .navbar {
-    width: 100%;
-    height: 60px;
-    background-color:#d0ba91;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .navbar .leftSide {
-   
-    height: 100%;
-    display: flex;
-    align-items: center;
-  margin-left:50px ;
-  }
-  
-  .navbar .leftSide img {
-    width: 40px;
-  }
-  
-  .navbar .rightSide {
-   
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar a {
-    color: rgb(12, 12, 12);
-    text-decoration: none;
-    margin: 20px;
-  }
-  
-  .navbar .rightSide button {
-    background-color: transparent;
-    border: none;
-    color: rgb(15, 13, 13);
-    cursor: pointer;
-  }
-  
-  .navbar .rightSide svg {
-    font-size: 40px;
-  }
-  
-  .navbar #open {
-    padding-left: 0px;
-  }
-  .navbar #open img {
-    display: none;
-  }
-  
-  .navbar #close img {
-    display: inherit;
-  }
-  
-  .navbar #open .hiddenLinks {
-    display: inherit;
-    margin-left: 30px;
-  }
-  
-  .navbar #close .hiddenLinks {
-    display: none;
-  }
-  
-  .navbar #open a {
-    width: 70px;
-    margin: 5px;
-  }
-  @media only screen and (max-width: 900px) {
-    .navbar .rightSide a {
-      width: 70px;
-    }
-    .navbar .leftSide {
-      padding-left: 50px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .navbar .rightSide a {
-      display: none;
-    }
-  
-    .navbar .rightSide {
-      justify-content: flex-end;
-      padding-right: 50px;
-    }
-  
-    .navbar .rightSide button {
-      display: inherit;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-      display: none;
-    }
-  
-    .hiddenLinks {
-      display: none;
-    }
-  }
+  height: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.84);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar .leftSide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.navbar .leftSide img {
+  width: 40px;
+}
+
+.navbar .rightSide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.navbar a {
+  text-decoration: none;
+  margin: 0px 10px;
+}
+.navbar-link {
+  color: #000;
+}
+
+.navbar-bottom-line {
+  border-bottom-width: 3px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  color: rgb(0, 0, 0);
+}

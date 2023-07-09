@@ -5,9 +5,7 @@ import "./css/style.css";
 
 export default function LoginComponent() {
   return (
-    <Card className="p-3 m-4 bg-login" style={{ flex: 0.3 }}>
-      <h3>Login</h3>
-      <p className="text">Glad you are back!</p>
+    <div className="p-2 m-2 bg-login" style={{ width: "20%", height: "80%" }}>
       <Form>
         <UserText
           title={"Email address"}
@@ -24,19 +22,18 @@ export default function LoginComponent() {
         />
 
         <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Remember me" />
+          <Form.Check style={{color:"#fff"}} type="checkbox" label="Remember me" />
         </Form.Group>
-        <div className="d-flex flex-column  align-items-center justify-content-center my-4">
-          <Button className="my-2 w-100" variant="primary" type="submit" block>
+        <div className="d-flex flex-row  align-items-center justify-content-center my-1">
+          <Button className="my-2 w-50" variant="primary" type="submit" block>
             Login
           </Button>
+          <Link className="mx-2" to="/signup">
+            Sign up
+          </Link>
         </div>
-
-        <span className="text-center mt-3">
-          Don't have an account? <Link to="/signup">Sign up</Link>
-        </span>
       </Form>
-    </Card>
+    </div>
   );
 }
 
@@ -49,13 +46,13 @@ function UserText({
 }) {
   return (
     <Form.Group controlId={formId} className={"my-2"}>
-      <Form.Label>{title}</Form.Label>
+      <Form.Label style={{ color: "#fff" }}>{title}</Form.Label>
       <Form.Control
         className="bg-user-input"
         type={type}
         placeholder={placeholder}
       />
-      {hintText && <Form.Text className="text-muted">{hintText}</Form.Text>}
+      {/* {hintText && <Form.Text className="text-muted">{hintText}</Form.Text>} */}
     </Form.Group>
   );
 }

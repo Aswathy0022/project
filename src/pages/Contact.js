@@ -5,10 +5,8 @@ import "../styles/Contact.css";
 function Contact() {
   return (
     <div className="contact">
-      
       <div className="rightSide">
-        <h3> Contact Us</h3>
-
+        <h4> Contact Us</h4>
         <form id="contact-form" method="POST">
           <label htmlFor="name">Full Name</label>
           <input name="name" placeholder="Enter full name..." type="text" />
